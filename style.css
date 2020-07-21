@@ -1,0 +1,95 @@
+body{
+    background-color: grey;
+    margin-left: 40%;
+    align-items: center;
+    
+    }
+
+#score-card{
+    padding-left: 60px;
+    position: relative;
+    
+}
+
+#score{
+    padding-left: 5px;
+    padding-right: 5px;
+    border-style: groove;
+    border-width: 5px;
+    background-color: honeydew;
+    
+}
+.grid{
+    margin-top: 15px;
+    position: relative;
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: brown;
+    
+    
+  }
+.score-box{
+    display: flex;
+    float: unset;
+    
+    
+}
+#start-button{
+    position: relative;
+    margin-left: 60px;
+    color: white;
+    background-color: blue;
+    font-family: fantasy;
+    border-style: groove;
+    transform: scale(2);
+}
+.grid div{
+    position: inherit;
+    height: 20px;
+    width: 20px;
+    outline: inset;
+    outline-offset: -2px;
+    
+}
+
+
+
+.tetromino{
+    background-color: wheat;
+    outline: inset;
+    outline-offset: -2.5px;
+    flex-wrap: nowrap;
+    
+    
+    
+}
+
+.mini-grid{
+    align-content: center;
+    align-items: center;
+    
+   margin-left: 50px;
+   
+   padding-left: 10px;
+    display: flex;
+    height: 100px;
+    width: 100px;
+    flex-wrap: wrap;
+    background-color: brown;
+}
+
+.mini-grid div{
+    align-content: center;
+   
+    height: 25px;
+    width: 25px;
+   
+}
+
+.container{
+    display: flex;
+    align-items: center;
+
+}
