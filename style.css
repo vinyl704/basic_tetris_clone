@@ -46,7 +46,7 @@ body{
     color: white;
     background: blue;
 }
-
+/*not showing correctly last time. . . maybe this time*/
 .scoreContainer{
     display: flex;
     flex-direction: column;
