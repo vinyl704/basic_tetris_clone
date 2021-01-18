@@ -1,7 +1,7 @@
 body{
+    
     background-color: grey;
-    margin-left: 40%;
-    align-items: center;
+    
     
     }
 
@@ -17,19 +17,62 @@ body{
     border-style: groove;
     border-width: 5px;
     background-color: honeydew;
+    margin-bottom: 10px;
     
 }
+
+.control{
+    display:grid;
+    grid-template-columns: repeat minmax(75px, 200px);
+    grid-column:3/4;
+    
+
+
+}
+.control button{
+    border-radius: 15px;
+    gap: 10px;
+    height:50px;
+    
+   
+}
+.rotateBtn{
+    grid-column: 1/3;
+    color: white;
+    background: blue;
+}
+.downBtn{
+    grid-column: 1/3;
+    color: white;
+    background: blue;
+}
+
+.scoreContainer{
+    display:flex;
+    position: fixed;
+    bottom: 175px;
+    left: 30%; 
+    margin: auto;
+}
+
 .grid{
-    margin-top: 15px;
+    
+    margin:auto 20px;
     position: relative;
     width: 200px;
     height: 400px;
     display: flex;
     flex-wrap: wrap;
     background-color: brown;
+    grid-column: 1/2;
     
     
   }
+
+ .etc{
+     grid-column: 3/4;
+     grid-row: 1/3;
+ }
 .score-box{
     display: flex;
     float: unset;
@@ -42,8 +85,9 @@ body{
     color: white;
     background-color: blue;
     font-family: fantasy;
-    border-style: groove;
+    
     transform: scale(2);
+    border-radius: 20px;
 }
 .grid div{
     position: inherit;
@@ -67,29 +111,39 @@ body{
 }
 
 .mini-grid{
-    align-content: center;
-    align-items: center;
+    justify-content: center;
+     
     
-   margin-left: 50px;
-   
-   padding-left: 10px;
+   margin: auto;
+   border-radius: 15px;
+   padding: 0px 0px 40px 20px;
     display: flex;
     height: 100px;
     width: 100px;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     background-color: brown;
+    
 }
 
 .mini-grid div{
-    align-content: center;
-   
-    height: 25px;
+    align-self: center;
+   justify-content: center;
+     height: 25px;
     width: 25px;
+    position: relative;
+    margin: 0;
    
 }
 
 .container{
-    display: flex;
+    display: grid;
     align-items: center;
+    justify-content: center;
+    grid-template-columns: 2fr, 1fr;  
+    margin-top: 20px;
 
+}
+
+.hide{
+    visibility: hidden;
 }

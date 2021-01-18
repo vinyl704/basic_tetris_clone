@@ -85,6 +85,10 @@ document.addEventListener('DOMContentLoaded', ()=> {
      else
      if(e.keyCode == 40){moveDown()}
     }
+    document.querySelector('.leftBtn').addEventListener('click', moveLeft)
+    document.querySelector('.rightBtn').addEventListener('click', moveRight)
+    document.querySelector('.rotateBtn').addEventListener('click', rotate)
+    document.querySelector('.downBtn').addEventListener('click', moveDown)
 
     
 document.addEventListener('keyup', controller)
